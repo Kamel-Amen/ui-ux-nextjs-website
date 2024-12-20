@@ -41,12 +41,18 @@ export function Hero() {
           className='min-h-[500px] w-full object-cover lg:h-auto'
         />
 
-        <div className='absolute bottom-5 flex w-full flex-col items center'>
-          <Image src={HeroImage} alt='hero image' className='-ml-4 h-[319px]' />
+        <div className='absolute bottom-5 flex w-full flex-col items-center'>
+          <Image
+            src={HeroImage}
+            alt='hero image'
+            className='-ml-4 h-[310px] sm:-mb-20 sm:h-[400px] lg:-mb-28 lg:h-auto xl:w-[70%]'
+          />
 
-          <div className='flex w-full flex-col items-center'>
-            <p className='text-white text-center'>Trusted by these companies</p>
-            <div className='grid grid-cols-3 items-center justify-items-center justify-center px-[20px] align-middle'>
+          <div className='flex w-full flex-col items-center lg:container lg:flex-row lg:justify-between lg:px-20'>
+            <p className='text-white text-center lg:text-[18px]'>
+              Trusted by these companies
+            </p>
+            <div className='grid grid-cols-3 items-center justify-items-center justify-center px-[20px] align-middle lg:grid-cols-5'>
               <Image src={Google} alt='' />
               <Image src={Slack} alt='' />
               <Image src={Truspilot} alt='' />
